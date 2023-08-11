@@ -1,29 +1,53 @@
-body{
-    height: 3000px;
-    overflow-x: hidden;
-}
-
-.bg-home{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.navbar{
-    transition: all 0.5s;
+.navbar {
+    transition : all 0.5s;
     font-family: 'Roboto', sans-serif;
 }
-.navbar a{
+
+.navbar a {
     color: white;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: chocolate;
 }
-.navbar-scrolled{
+
+.navbar-scrolled {
     background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow      : 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+section.home {
+    display: block;
+    width  : 745px;
+
+}
+
+.hero {
+    position        : relative;
+    height          : 100vh;
+    background-color: blue;
+    overflow        : hidden;
+}
+
+.hero-bg-home {
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    min-width : 100%;
+    min-height: 100%;
+    width     : auto;
+    height    : auto;
+    transform : translateX(-50%) translateY(-50%);
+}
+
+.text-white h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size  : 65px;
+    color      : #FF9B05;
+}
+
+div.olshop img {
+    width       : 40px;
+    aspect-ratio: 1;
+    margin-right: 10px;
 }
