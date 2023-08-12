@@ -23,9 +23,8 @@
 </head>
 <style>
     body {
-        background-image: url(../images/background/bgkopi.png);
+        background: url(../images/background/bgkopi.png), rgb(121, 120, 120);
         background-repeat: repeat;
-        background-color: rgb(148, 147, 147);
     }
 </style>
 
@@ -202,7 +201,15 @@
 
         function select_data(select) {
             $.getJSON(data_api).then(function (data) {
-                data_kopi = data[select]
+
+                if (select == "") {
+                    data_kopi.push(...data["arabica"])
+                    data_kopi.push(...data["robusta"])
+                    data_kopi.push(...data["nonkopi"])
+                } else {
+                    data_kopi = data[select]
+                }
+                
                 console.log(data_kopi)
 
                 baris_produk.innerHTML = ""
@@ -229,7 +236,7 @@
                 });
             })
         }
-
+        select_data("")
 
 
         /* Batas Akhir penulisan kode Javascript */
