@@ -1,6 +1,4 @@
-body{
-    /*background-color: #EEE6DC;*/
-}
+
 html{
    scroll-behavior: smooth; 
 }
@@ -191,6 +189,7 @@ div.olshop img {
     height    : auto;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 80px;
     padding-bottom: 50px;
     
  }
@@ -280,3 +279,102 @@ div.olshop img {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
  }
+
+ section.review {
+    background-image: url(../images/background/bg-review.svg);
+    /* 
+       background-size: contain;
+       membuat gambar latar belakang tidak terpotong
+    */
+    background-size: contain;
+ 
+    /* 
+       background-repeat: no-repeat;
+       membuat gambar latar belakang tidak diulang (duplikat)
+    */
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+ }
+ 
+ section.review h2 {
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+ }
+ 
+ section.review>p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    width: 100%;
+ }
+ 
+ div.testimoni {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 50px;
+    box-shadow: 0px 0px 12px -10px #000;
+    background-color: #fff;
+ }
+ 
+ div.testimoni img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    object-fit: cover;
+ }
+ 
+ div.profile {
+    text-align: left;
+    display: block;
+    margin-bottom: 30px;
+    width: calc(100% - 75px);
+ }
+ div.profile h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+ }
+ 
+ div.profile p {
+    width: 100%;
+    text-align: left;
+ }
+ 
+ div.testimoni>p {
+    width: 100%;
+    text-align: left;
+ }
+ .footer{
+    background: linear-gradient(rgba(8, 8, 8, 0.9), rgba(8, 8, 8, 0.9)),url(../images/img/bg.jpg);
+ }
+ section.contact-us iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+ }
+ .w-100{
+    width: 100%;
+ }
+ .input-group>.form-control, .input-group>.form-control-plaintext, .input-group>.custom-select, .input-group>.custom-file{
+    position: relative;
+    flex: 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+ }
+ .input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+ }
+ 
