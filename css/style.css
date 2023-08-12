@@ -122,6 +122,8 @@ div.olshop img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 80px;
   }
 
   section.about-us h2 {
@@ -176,4 +178,105 @@ div.olshop img {
     background-image: url(../images/background/garis-bawah.png);
     top: unset;
     bottom: -60px;
+ }
+
+ section.best-seller{
+    padding-top: 40px;
+    background-image: url(../images/background/best-seller.png);
+    top       : 50%;
+    left      : 50%;
+    min-width : 100%;
+    min-height: 100%;
+    width     : auto;
+    height    : auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+ }
+ section.best-seller p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 100%;
+ }
+ section.best-seller h2{
+    margin-top: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+ }
+
+ div.produk {
+    /* 
+       Penulisan padding dan margin seperti padding:20px ini penulisan singkat 
+       yang berarti top, right, bottom, left nilainya sama, yaitu 20px 
+    */
+    padding: 20px;
+    width: 25%;
+ }
+
+ div.produk img {
+    /* transition membuat animasi transisi dari perubahan style, 0.3s berarti 0.3 detik */
+    transition: all 0.3s ease;
+ 
+    /* border-radius  Membuat sudut membulat */
+    border-radius: 15px;
+ 
+    /* box-shadow membuat efek bayangan */
+    box-shadow: 0 3px 10px -2px #f5e6bd;
+ }
+
+ div.produk img:hover {
+
+    /* membuat transformasi, bisa berupa scale(1.05), rotate(180deg), translateY(-50px), dsb */
+    transform: scale(0.9);
+    border-radius: 50%;
+ }
+ div.produk p{
+    color: white;
+    margin-top: 10px;
+    
+ }
+
+ section.our-team {
+
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+ }
+ 
+ section.our-team h2 {
+    margin-bottom: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+    width: 100%;
+ }
+
+ 
+ section.our-team>p {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 800px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+ }
+ 
+ div.team {
+    width: 25%;
+    padding: 20px;
+ }
+ 
+ div.team img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 0 3px 10px -2px #000;
+    border-radius: 50px;
+    margin-bottom: 10px;
+ }
+ div.team h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
  }
